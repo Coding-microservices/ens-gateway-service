@@ -13,6 +13,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>ens-gateway-service</name>
     <description>ens-gateway-service</description>
+    <packaging>jar</packaging>
 
     <properties>
         <java.version>21</java.version>
@@ -56,6 +57,10 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>io.vladprotchenko.ensgatewayservice.EnsGatewayServiceApplication</mainClass>
+                    <layout>JAR</layout>
+                </configuration>
             </plugin>
         </plugins>
     </build>
